@@ -1,0 +1,23 @@
+{
+  "name": "ahhp/vast",
+  "description": "VAST 4.2 XML generator",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "AmirHossein",
+      "email": "amir.hossein.hp@gmail.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "autoload": {
+    "psr-4": {
+      "ahhp\\Vast\\": "src/"
+    }
+  },
+  "require": {
+    "php": ">=7",
+    "ext-dom": "*",
+    "ext-xmlwriter": "*"
+  }
+}

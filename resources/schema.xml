@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VAST version="4.2">
+    <Error>0+</Error>
+    <Ad id="" sequence="" adType="">
+        1+
+        <InLine>
+            <AdSystem>* 1</AdSystem>
+            <AdTitle>* 1</AdTitle>
+            <Impression id="">* 1+</Impression>
+            <AdServingId>* 1</AdServingId>
+            <Category authority="*">0+</Category>
+            <Description>0-1</Description>
+            <Advertiser id="">0-1</Advertiser>
+            <Pricing model="* PM, CPC, CPE, or CPV" currency="*  three-letter ISO-4217">0-1</Pricing>
+            <Survey type="">0+</Survey>
+            <Error>0+</Error>
+            <Extensions>
+                0-1
+                <Extension type="">0+</Extension>
+            </Extensions>
+            <ViewableImpression id="">
+                0-1
+                <Viewable>0+</Viewable>
+                <NotViewable>0+</NotViewable>
+                <ViewUndetermined>0+</ViewUndetermined>
+            </ViewableImpression>
+            <AdVerifications>
+                0-1
+                <Verification vendor="*">
+                    <JavaScriptResource apiFramework="*" browserOptional="*">0+</JavaScriptResource>
+                    <ExecutableResource apiFramework="*" type="*">0+</ExecutableResource>
+                    <TrackingEvents>
+                        0-1
+                        <Tracking event="*">0+</Tracking>
+                    </TrackingEvents>
+                    <VerificationParameters>0-1</VerificationParameters>
+                </Verification>
+            </AdVerifications>
+            <Creatives>
+                *
+                <Creative id="" adid="" sequence="" apiFramework="">
+                    1+
+                    <UniversalAdId idRegistry="*">* 1+</UniversalAdId>
+                    <CreativeExtensions>
+                        0-1
+                        <CreativeExtension type="">0+</CreativeExtension>
+                    </CreativeExtensions>
+                    <Linear skipoffset="">
+                        0-1
+                        <Duration>* 1</Duration>
+                        <MediaFiles>
+                            * 1
+                            <MediaFile delivery="*" type="*" width="*" height="*" codec="" id=""
+                                       bitrate="" minBitrate="" maxBitrate="" scalable="" maintainAspectRatio=""
+                                       fileSize="" mediaType="">* 1+
+                            </MediaFile>
+                            <Mezzanine delivery="*" type="*" width="*" height="*" codec="" id="" fileSize=""
+                                       mediaType="">* 0+
+                            </Mezzanine>
+                            <InteractiveCreativeFile type="" apiFramework="" variableDuration="">0+
+                            </InteractiveCreativeFile>
+                            <ClosedCaptionFiles>
+                                1
+                                <ClosedCaptionFile type="" language="">0+</ClosedCaptionFile>
+                            </ClosedCaptionFiles>
+                        </MediaFiles>
+                        <AdParameters xmlEncoded="">0-1</AdParameters>
+                        <TrackingEvents>
+                            0-1
+                            <Tracking event="" offset="">0+</Tracking>
+                        </TrackingEvents>
+                        <VideoClicks>
+                            0-1
+                            <ClickThrough id="">0-1</ClickThrough>
+                            <ClickTracking id="">0-1</ClickTracking>
+                            <CustomClick id="">0-1</CustomClick>
+                        </VideoClicks>
+                        <Icons>
+                            0-1
+                            <Icon program="" width="" height="" xPosition="" yPosition="" duration="" offset=""
+                                  apiFramework="" pxratio="" altText="" hoverText="">
+                                1+
+                                <IconViewTracking>0+</IconViewTracking>
+                                <IconClicks>
+                                    0-1
+                                    <IconClickThrough>0-1</IconClickThrough>
+                                    <IconClickTracking id="">0+</IconClickTracking>
+                                    <IconClickFallbackImages>
+                                        0-1
+                                        <IconClickFallbackImage width="*" height="*">
+                                            1+
+                                            <AltText>0-1</AltText>
+                                            <StaticResource creativeType="*">0+</StaticResource>
+                                        </IconClickFallbackImage>
+                                    </IconClickFallbackImages>
+                                </IconClicks>
+                            </Icon>
+                        </Icons>
+                    </Linear>
+
+                    <NonLinearAds>
+                        0-1
+                        <NonLinear id="" width="*" height="*" expandedWidth="" expandedHeight="" scalable=""
+                                   maintainAspectRatio="" apiFramework="" minSuggestedDuration="">
+                            1+
+                            <NonLinearClickThrough>0-1</NonLinearClickThrough>
+                            <NonLinearClickTracking id="">0-1</NonLinearClickTracking>
+                            <StaticResource creativeType="*">0+</StaticResource>
+                            <IFrameResource>0+</IFrameResource>
+                            <HTMLResource>0+</HTMLResource>
+                            <AdParameters xmlEncoded="">0-1</AdParameters>
+                        </NonLinear>
+                    </NonLinearAds>
+
+                    <CompanionAds required="all|any|none">
+                        0-1
+                        <Companion width="*" height="*" id="" assetWidth="" assetHeight="" expandedWidth=""
+                                   expandedHeight="" apiFramework="" adSlotId="" pxratio="" renderingMode="">
+                            1+
+                            <StaticResource creativeType="*">0+</StaticResource>
+                            <IFrameResource>0+</IFrameResource>
+                            <HTMLResource>0+</HTMLResource>
+                            <AdParameters xmlEncoded="">0-1</AdParameters>
+                            <AltText>0-1</AltText>
+                            <CompanionClickThrough>0-1</CompanionClickThrough>
+                            <CompanionClickTracking id="">0+</CompanionClickTracking>
+                            <TrackingEvents>
+                                0-1
+                                <Tracking event="" offset="">0+</Tracking>
+                            </TrackingEvents>
+                        </Companion>
+                    </CompanionAds>
+                </Creative>
+            </Creatives>
+            <Expires>0-1</Expires>
+        </InLine>
+
+        <Wrapper>
+            <Impression id="">* 1+</Impression>
+            <VASTAdTagURI>* 1</VASTAdTagURI>
+            <AdSystem>* 1</AdSystem>
+            <Pricing model="* PM, CPC, CPE, or CPV" currency="*  three-letter ISO-4217">0-1</Pricing>
+            <Error>0+</Error>
+            <ViewableImpression id="">
+                0-1
+                <Viewable>0+</Viewable>
+                <NotViewable>0+</NotViewable>
+                <ViewUndetermined>0+</ViewUndetermined>
+            </ViewableImpression>
+            <AdVerifications>
+                0-1
+                <Verification vendor="*">
+                    <JavaScriptResource apiFramework="*" browserOptional="*">0+</JavaScriptResource>
+                    <ExecutableResource apiFramework="*" type="*">0+</ExecutableResource>
+                    <TrackingEvents>
+                        0-1
+                        <Tracking event="*">0+</Tracking>
+                    </TrackingEvents>
+                    <VerificationParameters>0-1</VerificationParameters>
+                </Verification>
+            </AdVerifications>
+            <Extensions>
+                0-1
+                <Extension type="">0+</Extension>
+            </Extensions>
+            <Creatives>
+                *
+                <Creative id="" adid="" sequence="" apiFramework="">
+                    1+
+                    <UniversalAdId idRegistry="*">* 1+</UniversalAdId>
+                    <CreativeExtensions>
+                        0-1
+                        <CreativeExtension type="">0+</CreativeExtension>
+                    </CreativeExtensions>
+                    <Linear skipoffset="">
+                        0-1
+                        <Duration>* 1</Duration>
+                        <MediaFiles>
+                            * 1
+                            <MediaFile delivery="*" type="*" width="*" height="*" codec="" id=""
+                                       bitrate="" minBitrate="" maxBitrate="" scalable="" maintainAspectRatio=""
+                                       fileSize="" mediaType="">* 1+
+                            </MediaFile>
+                            <Mezzanine delivery="*" type="*" width="*" height="*" codec="" id="" fileSize=""
+                                       mediaType="">* 0+
+                            </Mezzanine>
+                            <InteractiveCreativeFile type="" apiFramework="" variableDuration="">0+
+                            </InteractiveCreativeFile>
+                            <ClosedCaptionFiles>
+                                1
+                                <ClosedCaptionFile type="" language="">0+</ClosedCaptionFile>
+                            </ClosedCaptionFiles>
+                        </MediaFiles>
+                        <AdParameters xmlEncoded="">0-1</AdParameters>
+                        <TrackingEvents>
+                            0-1
+                            <Tracking event="" offset="">0+</Tracking>
+                        </TrackingEvents>
+                        <VideoClicks>
+                            <ClickThrough id="">0-1</ClickThrough>
+                            <ClickTracking id="">0-1</ClickTracking>
+                            <CustomClick id="">0-1</CustomClick>
+                        </VideoClicks>
+                        <Icons>
+                            0-1
+                            <Icon program="" width="" height="" xPosition="" yPosition="" duration="" offset=""
+                                  apiFramework="" pxratio="" altText="" hoverText="">
+                                1+
+                                <IconViewTracking>0+</IconViewTracking>
+                                <IconClicks>
+                                    0-1
+                                    <IconClickThrough>0-1</IconClickThrough>
+                                    <IconClickTracking id="">0+</IconClickTracking>
+                                    <IconClickFallbackImages>
+                                        0-1
+                                        <IconClickFallbackImage width="*" height="*">
+                                            1+
+                                            <AltText>0-1</AltText>
+                                            <StaticResource creativeType="*">0+</StaticResource>
+                                        </IconClickFallbackImage>
+                                    </IconClickFallbackImages>
+                                </IconClicks>
+                            </Icon>
+                        </Icons>
+                    </Linear>
+
+                    <NonLinearAds>
+                        0-1
+                        <NonLinear id="" width="*" height="*" expandedWidth="" expandedHeight="" scalable=""
+                                   maintainAspectRatio="" apiFramework="" minSuggestedDuration="">
+                            <NonLinearClickThrough>0-1</NonLinearClickThrough>
+                            <NonLinearClickTracking id="">0-1</NonLinearClickTracking>
+                            <StaticResource creativeType="*">0+</StaticResource>
+                            <IFrameResource>0+</IFrameResource>
+                            <HTMLResource>0+</HTMLResource>
+                            <AdParameters xmlEncoded="">0-1</AdParameters>
+                        </NonLinear>
+                    </NonLinearAds>
+
+                    <CompanionAds required="all|any|none">
+                        0-1
+                        <Companion width="*" height="*" id="" assetWidth="" assetHeight="" expandedWidth=""
+                                   expandedHeight="" apiFramework="" adSlotId="" pxratio="" renderingMode="">
+                            1+
+                            <StaticResource creativeType="*">0+</StaticResource>
+                            <IFrameResource>0+</IFrameResource>
+                            <HTMLResource>0+</HTMLResource>
+                            <AdParameters xmlEncoded="">0-1</AdParameters>
+                            <AltText>0-1</AltText>
+                            <CompanionClickThrough>0-1</CompanionClickThrough>
+                            <CompanionClickTracking id="">0+</CompanionClickTracking>
+                            <TrackingEvents>
+                                0-1
+                                <Tracking event="" offset="">0+</Tracking>
+                            </TrackingEvents>
+                        </Companion>
+                    </CompanionAds>
+                </Creative>
+            </Creatives>
+            <BlockedAdCategories authority="*">0+</BlockedAdCategories>
+        </Wrapper>
+    </Ad>
+</VAST>

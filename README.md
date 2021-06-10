@@ -1,5 +1,8 @@
 # vast
 VAST 4.2 PHP Model
+
+[![Latest Stable Version](https://poser.pugx.org/ahhp/vast/v)](//packagist.org/packages/ahhp/vast) [![Total Downloads](https://poser.pugx.org/ahhp/vast/downloads)](//packagist.org/packages/ahhp/vast) [![Latest Unstable Version](https://poser.pugx.org/ahhp/vast/v/unstable)](//packagist.org/packages/ahhp/vast) [![License](https://poser.pugx.org/ahhp/vast/license)](//packagist.org/packages/ahhp/vast)
+
 Usage:
 ```php
 $vast = new ahhp\Vast\Vast();

@@ -1,6 +1,7 @@
 {
   "name": "ahhp/vast",
   "description": "VAST 4.2 XML generator",
+  "keywords": ["vast"],
   "type": "library",
   "license": "MIT",
   "authors": [

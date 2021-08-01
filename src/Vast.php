@@ -9,7 +9,7 @@ use XMLWriter;
 class Vast extends Node {
     public function __construct() {
         parent::__construct("VAST");
-		$this->version = '4.2';
+        $this->version = '4.2';
     }
 
     public function addError($content = null) {
